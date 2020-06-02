@@ -41,13 +41,18 @@ LinkList constructList() {
 	head：链表头结点，如果链表有环，那么loopNode为环的入口
 */
 void freeList(LinkList head, LNode* loopNode) {
+	int loopNodeDelete = 0;		//flag
 	LNode* tmp = NULL;
 	LNode* cur = NULL;
 	for (cur=head->next; cur!=NULL; ) {
 		tmp = cur;
 		cur = cur->next;
-		if (tmp == loopNode)
-			return;		//似乎只释放了非环部分？
+		if (tmp == loopNode) {
+			if (loopNodeDelete == 0)
+				loopNodeDelete = 1;
+			else
+				return;
+		}
 		free(tmp);
 	}
 }
