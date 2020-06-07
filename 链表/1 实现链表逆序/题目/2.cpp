@@ -25,7 +25,7 @@ void recursiveReverse(LinkList* firstRef) {
 	cur->next->next = cur;
 	cur->next = NULL;
 	//更新逆序后链表第一个结点的指向
-	*firstRef = ref;
+	*firstRef = rest;
 }
 
 /*
