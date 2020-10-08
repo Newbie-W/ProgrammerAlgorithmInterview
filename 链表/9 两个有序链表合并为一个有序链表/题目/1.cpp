@@ -37,7 +37,7 @@ LNode* merge(LNode* head1, LNode* head2) {
 	}
 	//每次找链表剩余结点的最小值对应的结点连接到合并后链表的尾部
 	while (cur1 && cur2) {
-		if (cur1->data > cur2->data) {
+		if (cur1->data < cur2->data) {
 			cur->next = cur1;
 			cur = cur1;
 			cur1 = cur1->next;
