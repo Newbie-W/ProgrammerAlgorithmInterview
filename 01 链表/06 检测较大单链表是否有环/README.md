@@ -81,7 +81,7 @@ int main() {
 > 慢指针（slow）可能没走完一圈，而快指针（fast）可能走了很多圈。<br>
 > 假设同样时间内，slow走s步，fast走2s步（2s = s + n圈长度）<br>
 > 设 环长r，链表长度L，入口环与相遇点距离x，起点到环入口距离(即非环链表部分的长度)a<br>
-> 如图所示：<br>![img1.6.1 图](https://github.com/Newbie-W/ProgrammerAlgorithmInterview/blob/master/%E9%93%BE%E8%A1%A8/6%20%E6%A3%80%E6%B5%8B%E8%BE%83%E5%A4%A7%E5%8D%95%E9%93%BE%E8%A1%A8%E6%98%AF%E5%90%A6%E6%9C%89%E7%8E%AF/pics/img1.6.1.jpg)<br>
+> 如图所示：<br>![img1.6.1 图](https://github.com/Newbie-W/ProgrammerAlgorithmInterview/blob/master/01%20%E9%93%BE%E8%A1%A8/06%20%E6%A3%80%E6%B5%8B%E8%BE%83%E5%A4%A7%E5%8D%95%E9%93%BE%E8%A1%A8%E6%98%AF%E5%90%A6%E6%9C%89%E7%8E%AF/pics/img1.6.1.jpg)<br>
 > 可列公式：<br>
 > ```
 > (1)  2s = s + nr
