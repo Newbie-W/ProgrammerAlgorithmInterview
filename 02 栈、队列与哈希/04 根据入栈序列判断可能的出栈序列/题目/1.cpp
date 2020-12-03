@@ -1,23 +1,14 @@
 /*
-实现一个栈的数据结构，使其具有以下方法：压栈、弹栈、取栈顶元素、判断栈是否为空以及获取栈中元素个数。
-法一：数组实现
-1. 数组首地址作为栈底，同时记录栈中元素长度size
-2. 则可推得栈顶
-（注意栈顶和栈底在栈中的位置（如，是否指向元素））
-3.
-进栈：将元素放到Arr[size]， 然后size++
-出栈：取出Arr[size-1]的元素（栈顶元素），然后执行size--操作
+输入两个整数序列，其中一个序列表示栈的push（入栈）顺序，判断另一个序列有没有可能为对应的pop（出栈）顺序。
+
+思路步骤：
+（1）
+（2）
+（3）
+
+时间复杂度 O(N)（）
+空间复杂度 O(N)（）
 */
-
-#define STACK_INIT_SIZE 10
-#define STACK_INCREMENT 2
-
-#include <stdio.h>
-#include <stdlib.h>
-
-typedef int ElemType;
-typedef int Status;
-#typedef int bool;
 
 typedef struct MyStack {
 	ElemType* base;
@@ -49,7 +40,7 @@ Status freeStack(MyStack *s) {
 }
 
 // 判断栈是否为空
-int isEmpty(MyStack *s) {
+bool isEmpty(MyStack *s) {
 	return s->stackSize == 0;
 }
 

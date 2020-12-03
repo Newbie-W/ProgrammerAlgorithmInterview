@@ -9,7 +9,7 @@
 
 typedef int ElemType;
 typedef int Status;
-#typedef int bool;
+// typedef int bool;
 
 typedef struct Node Node;
 struct Node {
@@ -41,7 +41,7 @@ Status freeStack(MyStack *s) {
 }
 
 // 判断栈是否为空
-int isEmpty(MyStack *s) {
+bool isEmpty(MyStack *s) {
 	if (s->next == NULL) {
 		return 1;
 	}
